@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         lives = 3;
 
-        // Win
+        // Win and Lose text are set to false, not meant to appear yet
         SetCountText();
         winTextObject.SetActive(false);
 
