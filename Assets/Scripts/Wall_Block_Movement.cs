@@ -28,4 +28,17 @@ public class Wall_Block_Movement : MonoBehaviour
     {
       
     }
+
+    private void TargetNextWaypoint()
+    {
+        _previousWaypoint = _waypointPath.GetWaypoint(_targetWaypointIndex);
+
+        _targetWaypointIndex = _waypointPath.GetNextWaypointIndex(_targetWaypointIndex);
+
+        _targetWaypoint = _waypointPath.GetWaypoint(_targetWaypointIndex);
+
+        _elapsedTime = 0;
+
+        float distanceToWaypoint = Vector3.Distance(_previousWaypoint.postion, _targetWaypoint.postion);
+    }
 }
