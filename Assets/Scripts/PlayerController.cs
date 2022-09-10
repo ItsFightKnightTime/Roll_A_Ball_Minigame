@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         count = 0;
 
+        /
         rb = GetComponent<Rigidbody>();
         lives = 3;
 
@@ -46,12 +47,14 @@ public class PlayerController : MonoBehaviour
 
     void SetCountText()
     {
+        // If player gets all 28 points, win text appears
         countText.text = "Count: " + count.ToString();
         if (count >= 28)
         {
             winTextObject.SetActive(true);
         }
 
+        // If lives hit 0, Lose text appears
         livesText.text = "Lives: " + lives.ToString();
         if (lives == 0)
         {
