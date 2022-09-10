@@ -29,7 +29,10 @@ public class Wall_Block_Movement : MonoBehaviour
     // Moving to Target end postion
     void Update()
     {
-        // Distance between the two markers
+        // Distance between the two markers and its speed
+        float distCovered = (Time.time - startTime) * speed;
+
+        // Fraction of journey completion
        transform.position = new Vector3.Lerp(transform.position)
     }
 }
