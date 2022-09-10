@@ -60,7 +60,6 @@ public class PlayerController : MonoBehaviour
         if (lives == 0)
         {
             LoseTextObject.SetActive(true);
-            Destory(other.gameObject.CompareTag("Player"));
         }
     }
     void FixedUpdate()
