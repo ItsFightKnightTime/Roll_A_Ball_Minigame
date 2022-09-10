@@ -14,4 +14,9 @@ public class Wall_Movement : MonoBehaviour
         int nextWaypointIndex = currentWaypointIndex + 1;
 
         if (nextWaypointIndex == transform.childCount)
+        {
+            nextWaypointIndex = 0;
+        }
+
+        return nextWaypointIndex;
     }
