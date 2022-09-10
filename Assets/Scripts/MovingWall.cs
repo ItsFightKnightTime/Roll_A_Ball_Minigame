@@ -4,18 +4,22 @@ using UnityEngine;
 
 public class MovingWall : MonoBehaviour
 {
-    
+    [SerializeField]
     private WaypointPath _waypointPath;
+
+    [SerializeField]
+    private float _speed;
+    private int _targetWaypointIndex;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
