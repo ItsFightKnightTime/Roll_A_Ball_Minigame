@@ -5,7 +5,7 @@ using UnityEngine;
 public class MovingWall : MonoBehaviour
 {
     [SerializeField]
-    private WaypointPath1 _waypointPath;
+    private WaypointPath _waypointPath;
 
     [SerializeField]
     private float _speed;
