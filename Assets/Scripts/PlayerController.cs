@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
 {
     public float speed = 0;
     public TextMeshProUGUI countText;
+    public Text
     public GameObject winTextObject;
     private Rigidbody rb;
     private int count;
@@ -35,7 +36,7 @@ public class PlayerController : MonoBehaviour
     void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
-        if (count >= 12)
+        if (count >= 28)
         {
             winTextObject.SetActive(true);
         }
@@ -71,7 +72,7 @@ public class PlayerController : MonoBehaviour
 
         if (count == 20)
         {
-            transform.position = new Vector3
+            transform.position = new Vector3(100f, 0.5f, 100f);
         }
     }
 }
