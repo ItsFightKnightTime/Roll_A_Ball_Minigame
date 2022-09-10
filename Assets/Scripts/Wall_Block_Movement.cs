@@ -26,9 +26,10 @@ public class Wall_Block_Movement : MonoBehaviour
         journeyLength = Vector3.Distance(startMarker.position, endMarker.postion);
     }
 
-    // Update is called once per frame
+    // Moving to Target end postion
     void Update()
     {
+        // Distance between the two markers
        transform.position = new Vector3.Lerp(transform.position)
     }
 }
