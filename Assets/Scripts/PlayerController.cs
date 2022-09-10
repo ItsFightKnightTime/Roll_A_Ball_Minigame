@@ -71,6 +71,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        // When collecting pickup item, count value goes up
         if (other.gameObject.CompareTag("Pickup"))
         {
             other.gameObject.SetActive(false);
@@ -79,6 +80,7 @@ public class PlayerController : MonoBehaviour
             SetCountText();
         }
 
+        // when colliding with enemy, lives counted down
         if (other.gameObject.CompareTag("Enemy"))
         {
             other.gameObject.SetActive(false);
