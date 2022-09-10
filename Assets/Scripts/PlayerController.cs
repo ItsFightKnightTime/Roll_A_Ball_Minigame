@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
         count = 0;
 
         rb = GetComponent<Rigidbody>();
-        lives = 0;
+        lives = 3;
 
         SetCountText();
         winTextObject.SetActive(false);
