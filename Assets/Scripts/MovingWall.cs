@@ -26,7 +26,7 @@ public class MovingWall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        _elapsedTime += _timeToWaypoint.deltaTime;
     }
 
     private void TargetNextWaypoint()
