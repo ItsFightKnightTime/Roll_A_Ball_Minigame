@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
             winTextObject.SetActive(true);
         }
 
-        LivesText.text = "Count: " + count.ToString();
+        livesText.text = "Lives: " + count.ToString();
         if (lives == 0)
         {
             LoseTextObject.SetActive(true);
