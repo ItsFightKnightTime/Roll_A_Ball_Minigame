@@ -20,7 +20,7 @@ public class MovingWall : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        TargetNextWaypoint();
     }
 
     // Update is called once per frame
@@ -38,5 +38,6 @@ public class MovingWall : MonoBehaviour
         _elapsedTime = 0;
 
         float distanceToWaypoint = Vector3.Distance(_previousWaypoint.position, _targetWaypoint.position);
+        _timeToWaypoint = distanceToWaypoint / _speed;
     }
 }
