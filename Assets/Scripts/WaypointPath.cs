@@ -18,5 +18,7 @@ public class WaypointPath : MonoBehaviour
         {
             nextWaypointIndex = 0;
         }
+
+        return nextWaypointIndex;
     }
 }
