@@ -34,6 +34,6 @@ public class Wall_Block_Movement : MonoBehaviour
         float fractionOfJourney = distCovered / journeyLength;
 
         // Complicated shit
-       transform.position = new Vector3.Lerp(transform.position)
+        transform.position = new Vector3.Lerp(startMarker.postion, endMarker.postion, fractionOfJourney);
     }
 }
