@@ -11,7 +11,12 @@ public class Wall_Block_Movement : MonoBehaviour
     // Movement speed of Wall
     public float speed = 1.0F;
 
-    // Time 
+    // Time when movement started
+    private float startTime;
+
+    //Total distance between start and end markers
+    private float journeyLength;
+    
     // Start is called before the first frame update
     void Start()
     {
