@@ -4,20 +4,15 @@ using UnityEngine;
 
 public class WaypointPath : MonoBehaviour
 {
-    public Transform GetWaypoint(int waypointIndex)
+    // Start is called before the first frame update
+    void Start()
     {
-        return transform.GetChild(waypointIndex);
+        
     }
 
-    public int GetNextWaypointIndex(int currentWaypoint)
+    // Update is called once per frame
+    void Update()
     {
-        int nextWaypointIndex = currentWaypointIndex + 1;
-
-        if (nextWaypointIndex == transform.childCount)
-        {
-            nextWaypointIndex = 0;
-        }
-
-        return nextWaypointIndex;
+        
     }
 }
