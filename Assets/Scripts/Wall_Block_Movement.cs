@@ -7,6 +7,9 @@ public class Wall_Block_Movement : MonoBehaviour
     // Start and End Markers
     public Transform startMarker;
     public Transform endMarker;
+
+    //Movement speed of Wall
+    public float speed = 1.0F;
     
     // Start is called before the first frame update
     void Start()
