@@ -55,11 +55,12 @@ public class PlayerController : MonoBehaviour
             winTextObject.SetActive(true);
         }
 
-        // If lives hit 0, Lose text appears
+        // If lives hit 0, Lose text appears and Player dies
         livesText.text = "Lives: " + lives.ToString();
         if (lives == 0)
         {
             LoseTextObject.SetActive(true);
+            
         }
     }
     void FixedUpdate()
