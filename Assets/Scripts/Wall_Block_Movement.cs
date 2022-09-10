@@ -31,8 +31,9 @@ public class Wall_Block_Movement : MonoBehaviour
     {
         // Distance between the two markers and its speed
         float distCovered = (Time.time - startTime) * speed;
+        float fractionOfJourney = distCovered / journeyLength;
 
-        // Fraction of journey completion
+        // Complicated shit
        transform.position = new Vector3.Lerp(transform.position)
     }
 }
