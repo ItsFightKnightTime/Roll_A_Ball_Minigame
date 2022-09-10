@@ -6,6 +6,7 @@ using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
+    // Variables and Items are referenced here
     public float speed = 0;
     public TextMeshProUGUI countText;
     public TextMeshProUGUI livesText;
