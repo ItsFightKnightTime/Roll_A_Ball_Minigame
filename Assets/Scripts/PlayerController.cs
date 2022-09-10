@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
         winTextObject.SetActive(false);
 
         rb = GetComponent<Rigidbody>();
-        lives = 0;
+         = 0;
 
         SetLivesText();
         
