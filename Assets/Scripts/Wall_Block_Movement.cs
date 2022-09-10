@@ -13,6 +13,6 @@ public class Wall_Block_Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       transform.position Vector 3 
+       transform.position = new Vector3Lerp
     }
 }
