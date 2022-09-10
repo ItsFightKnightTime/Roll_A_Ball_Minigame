@@ -3198,7 +3198,7 @@ GameObject:
   - component: {fileID: 1414246991}
   - component: {fileID: 1414246990}
   m_Layer: 5
-  m_Name: Lives
+  m_Name: LivesText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3244,7 +3244,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Lives Count
+  m_text: Lives Text
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4037,6 +4037,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 25
   countText: {fileID: 1906165508}
+  LivesText: {fileID: 0}
+  LoseTextObject: {fileID: 0}
   winTextObject: {fileID: 1981417155}
 --- !u!1 &1797331700
 GameObject:
