@@ -26,7 +26,7 @@ public class MovingWall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _elapsedTime += _timeToWaypoint.deltaTime;
+        _elapsedTime += Time.deltaTime;
 
         float elapsedPercentage = _elapsedTime / _timeToWaypoint;
         transform.position = Vector3.Lerp(_previousWaypoint.position, _targetWaypoint.position, elapsedPercentage);
