@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
         }
 
         livesText.text = "Lives: " + count.ToString();
-        if (lives == 0)
+        if (lives = 0)
         {
             LoseTextObject.SetActive(true);
         }
@@ -73,7 +73,7 @@ public class PlayerController : MonoBehaviour
 
             SetCountText();
         }
-        
+
         if (other.gameObject.CompareTag("Enemy"))
         {
             other.gameObject.SetActive(false);
