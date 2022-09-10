@@ -60,6 +60,7 @@ public class PlayerController : MonoBehaviour
         if (lives == 0)
         {
             LoseTextObject.SetActive(true);
+            Destroy(GetComponent<Rigidbody>());
         }
     }
     void FixedUpdate()
