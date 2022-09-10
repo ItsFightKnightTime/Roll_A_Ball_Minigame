@@ -20,3 +20,4 @@ public class Wall_Movement : MonoBehaviour
 
         return nextWaypointIndex;
     }
+}
