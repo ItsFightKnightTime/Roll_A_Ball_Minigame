@@ -63,5 +63,9 @@ public class PlayerController : MonoBehaviour
 
             SetCountText();
         }
+        if (count == 12) //Teleports to Level 2 Stage
+        {
+            transform.position = new Vector3()
+        }
     }
 }
