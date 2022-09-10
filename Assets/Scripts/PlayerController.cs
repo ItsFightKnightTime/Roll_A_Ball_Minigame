@@ -26,6 +26,12 @@ public class PlayerController : MonoBehaviour
 
         SetCountText();
         winTextObject.SetActive(false);
+
+        rb = GetComponent<Rigidbody>();
+        lives = 0;
+
+        SetLivesText();
+        
     }
 
     void OnMove(InputValue movementValue)
