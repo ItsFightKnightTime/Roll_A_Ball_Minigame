@@ -21,6 +21,9 @@ public class Wall_Block_Movement : MonoBehaviour
     void Start()
     {
         startTime = Time.time;
+
+        // Journey Length
+        journeyLength = Vector3.Distance(startMarker.position, endMarker.postion);
     }
 
     // Update is called once per frame
