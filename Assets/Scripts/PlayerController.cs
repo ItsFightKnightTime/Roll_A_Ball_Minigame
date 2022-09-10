@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     public GameObject winTextObject;
     private Rigidbody rb;
     private int count;
+
+    private int Lives;
     private float movementX;
     private float movementY;
 
