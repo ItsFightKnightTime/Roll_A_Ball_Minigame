@@ -11,7 +11,7 @@ public class Wall_Block_Movement : MonoBehaviour
     private float _speed;
 
     private int _targetWaypointIndex;
-    
+
     private Transform _previousWaypoint;
     private Transform _targetWaypoint;
 
@@ -20,13 +20,16 @@ public class Wall_Block_Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-     
+
     }
 
     // Moving to Target end postion
     void Update()
     {
-      
+        _elapsedTime += Time.deltaTime;
+
+        float elapsedPercentage = _elapsedTime / _timeToWaypoint;
+        transform.position = Vector3.Lerp(_previousWaypoint.position, _targetWaypoint.postion, elapsedPercentage);
     }
 
     private void TargetNextWaypoint()
