@@ -23,7 +23,6 @@ public class Wall_Movement : MonoBehaviour
 
     }
 
-    // Moving to Target end postion
     void Update()
     {
         _elapsedTime += Time.deltaTime;
