@@ -50,6 +50,12 @@ public class PlayerController : MonoBehaviour
         {
             winTextObject.SetActive(true);
         }
+
+        countText.text = "Lives: " + count.ToString();
+        if (count == 0)
+        {
+            LoseTextObject.SetActive(true);
+        }
     }
     void FixedUpdate()
     {
