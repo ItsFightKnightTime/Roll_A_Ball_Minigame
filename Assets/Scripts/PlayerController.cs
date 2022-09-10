@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Initial Point Count Value
         rb = GetComponent<Rigidbody>();
         count = 0;
 
