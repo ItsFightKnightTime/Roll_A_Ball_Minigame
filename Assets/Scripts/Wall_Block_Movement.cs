@@ -8,9 +8,10 @@ public class Wall_Block_Movement : MonoBehaviour
     public Transform startMarker;
     public Transform endMarker;
 
-    //Movement speed of Wall
+    // Movement speed of Wall
     public float speed = 1.0F;
-    
+
+    // Time 
     // Start is called before the first frame update
     void Start()
     {
