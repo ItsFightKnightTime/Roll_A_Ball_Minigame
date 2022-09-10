@@ -8,7 +8,8 @@ public class PlayerController : MonoBehaviour
 {
     public float speed = 0;
     public TextMeshProUGUI countText;
-    public Text
+    public TextMeshProUGUI LivesText;
+    public GameObject LoseTextObject;
     public GameObject winTextObject;
     private Rigidbody rb;
     private int count;
