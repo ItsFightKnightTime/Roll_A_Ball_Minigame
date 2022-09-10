@@ -27,6 +27,14 @@ public class MovingWall : MonoBehaviour
     void Update()
     {
         _elapsedTime += _timeToWaypoint.deltaTime;
+
+        float elapsedPercentage = _elapsedTime / _timeToWaypoint;
+        transform.position = Vector3.Lerp(_previousWaypoint.position, _targetWaypoint.position, elapsedPercentage);
+
+        if (elapsedPercentage >= 1)
+        {
+            TargetNextWaypoint();
+        }
     }
 
     private void TargetNextWaypoint()
