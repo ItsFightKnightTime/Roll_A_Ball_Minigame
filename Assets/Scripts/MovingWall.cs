@@ -28,4 +28,10 @@ public class MovingWall : MonoBehaviour
     {
 
     }
+
+    private void TargetNextWaypoint()
+    {
+        _previousWaypoint = _waypointPath.GetWaypoint(_targetWaypointIndex);
+        _targetWaypointIndex = _way
+    }
 }
