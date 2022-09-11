@@ -90,7 +90,8 @@ public class PlayerController : MonoBehaviour
             SetCountText();
         }
 
-        if (count == 12) //Teleports to Level 2 Stage
+        // Teleportation to new levels
+        if (count == 12)
         {
             transform.position = new Vector3(50f, 0.5f, 50f);
         }
