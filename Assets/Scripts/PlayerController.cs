@@ -60,7 +60,6 @@ public class PlayerController : MonoBehaviour
         if (lives == 0)
         {
             LoseTextObject.SetActive(true);
-            speed = 0;
             Destroy(gameObject);
         }
     }
