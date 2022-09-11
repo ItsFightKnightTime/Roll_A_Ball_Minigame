@@ -61,6 +61,7 @@ public class PlayerController : MonoBehaviour
         {
             LoseTextObject.SetActive(true);
             speed = 0;
+            Destroy(gameObject);
         }
     }
     void FixedUpdate()
