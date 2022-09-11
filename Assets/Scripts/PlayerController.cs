@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
             winTextObject.SetActive(true);
         }
 
-        // If lives hit 0, Lose text appears and Player dies
+        // If lives hit 0, Lose text appears and Player's speed is halted
         livesText.text = "Lives: " + lives.ToString();
         if (lives == 0)
         {
