@@ -89,10 +89,7 @@ public class PlayerController : MonoBehaviour
 
             SetCountText();
         }
-    }
 
-    void OnTriggerEnter(Collider other)
-    {
         // Teleportation to new levels
         if (count == 12)
         {
