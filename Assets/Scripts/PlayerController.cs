@@ -18,9 +18,6 @@ public class PlayerController : MonoBehaviour
     private float movementX;
     private float movementY;
 
-    GameObject TeleportLevel_2;
-    GameObject
-
     // Start is called before the first frame update
     void Start()
     {
@@ -94,7 +91,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter(Collider other)
+    public void
     {
         // Teleportation to new levels
         if (count == 12)
