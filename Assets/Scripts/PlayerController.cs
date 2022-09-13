@@ -62,17 +62,6 @@ public class PlayerController : MonoBehaviour
             LoseTextObject.SetActive(true);
             Destroy(gameObject);
         }
-
-        // Teleportation to new levels
-        if (count == 12)
-        {
-            transform.position = new Vector3(50f, 0.5f, 50f);
-        }
-
-        if (count == 20)
-        {
-            transform.position = new Vector3(100f, 0.5f, 100f);
-        }
     }
     void FixedUpdate()
     {
@@ -99,6 +88,20 @@ public class PlayerController : MonoBehaviour
             lives = lives - 1;
 
             SetCountText();
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        // Teleportation to new levels
+        if (count == 12)
+        {
+            transform.position = new Vector3(50f, 0.5f, 50f);
+        }
+
+        if (count == 20)
+        {
+            transform.position = new Vector3(100f, 0.5f, 100f);
         }
     }
 }
