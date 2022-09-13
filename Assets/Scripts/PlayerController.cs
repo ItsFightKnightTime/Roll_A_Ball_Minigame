@@ -91,7 +91,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void Update()
+    void 
     {
         // Teleportation to new levels
         if (count == 12)
