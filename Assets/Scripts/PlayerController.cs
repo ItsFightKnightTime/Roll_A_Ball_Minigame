@@ -53,6 +53,7 @@ public class PlayerController : MonoBehaviour
         if (count >= 28)
         {
             winTextObject.SetActive(true);
+            Destroy(gameObject);
         }
 
         // If lives hit 0, Lose text appears and Player Object is destoryed
